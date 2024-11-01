@@ -1,0 +1,53 @@
+Comprehensive Guide to Regular Expressions (Regex)
+1. Basic Structure of Regex
+Regex, or Regular Expressions, is a powerful tool for text matching, extraction, and manipulation. Here’s a comprehensive guide covering the key aspects of regex patterns, including syntax, special characters, anchors, and more.
+2. Basic Meta-characters
+•	.: Matches any single character except a newline.
+•	\: Escape character, to match a literal meta-character (e.g., \.
+•	*: Matches 0 or more occurrences of the preceding element.
+•	+: Matches 1 or more occurrences of the preceding element.
+•	?: Matches 0 or 1 occurrence of the preceding element.
+•	{n}: Matches exactly n occurrences of the preceding element.
+•	{n,}: Matches n or more occurrences.
+•	{n,m}: Matches between n and m occurrences.
+3. Anchors
+•	^: Asserts position at the start of a line.
+•	$: Asserts position at the end of a line.
+•	\b: Word boundary (position between a word and a non-word character).
+•	\B: Non-word boundary.
+4. Character Classes
+•	[abc]: Matches any single character within the brackets (e.g., a, b, or c).
+•	[^abc]: Negated character class, matches any single character except a, b, or c.
+•	[a-z]: Range, matches any lowercase letter from a to z.
+•	[A-Za-z0-9_]: Commonly matches word characters.
+•	\d: Matches any digit (equivalent to [0-9]).
+•	\D: Matches any non-digit.
+•	\w: Matches any word character (alphanumeric + underscore).
+•	\W: Matches any non-word character.
+•	\s: Matches any whitespace (spaces, tabs, line breaks).
+•	\S: Matches any non-whitespace character.
+5. Predefined Character Classes
+•	\d: Digit [0-9]
+•	\D: Non-digit
+•	\w: Word character [A-Za-z0-9_]
+•	\W: Non-word character
+•	\s: Whitespace [ \t\r\n\f\v]
+•	\S: Non-whitespace
+6. Grouping and Capturing
+•	( ... ): Capturing group, captures the matched text for later use or extraction.
+•	(?: ... ): Non-capturing group, groups without capturing.
+•	(?<name> ... ): Named capturing group, accessible by the name.
+7. Assertions (Lookarounds)
+•	(?= ... ): Positive lookahead, asserts a position where the specified pattern can match.
+•	(?! ... ): Negative lookahead, asserts a position where the specified pattern cannot match.
+•	(?<= ... ): Positive lookbehind, matches if preceded by the specified pattern.
+•	(?<! ... ): Negative lookbehind, matches if not preceded by the specified pattern.
+8. Alternation
+|: Matches any one of the patterns separated by |. For example, cat|dog matches either 'cat' or 'dog'.
+9. Quantifiers
+•	*: Matches 0 or more of the preceding token.
+•	+: Matches 1 or more of the preceding token.
+•	?: Matches 0 or 1 of the preceding token.
+•	{n}: Matches exactly n occurrences.
+•	{n,}: Matches n or more occurrences.
+•	{n,m}: Matches between n and m occurrences.
